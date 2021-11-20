@@ -15,7 +15,7 @@
       </div>
       <div class="hero__buttons">
         <Button
-          :btnVisible="true"
+          :btnVisible="showNewArrivalsBtn"
           :btnText="'NEW ARRIVALS'"
           :bgColor="'#0EA5E9'"
           :textColor="'white'"
@@ -24,7 +24,7 @@
           :methodName="'click-New-Arrivals'"
         />
         <Button
-          :btnVisible="true"
+          :btnVisible="showBestSellerBtn"
           :btnText="'BEST SELLERS'"
           :bgColor="'transparent'"
           :textColor="'white'"
@@ -44,6 +44,7 @@ export default {
   components: {
     Button,
   },
+  props: { showNewArrivalsBtn: Boolean, showBestSellerBtn: Boolean },
 }
 </script>
 

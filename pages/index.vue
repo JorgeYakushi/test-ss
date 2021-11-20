@@ -1,5 +1,7 @@
 <template>
   <Hero
+    :showNewArrivalsBtn="showNewArrivalsBtn"
+    :showBestSellerBtn="showBestSellerBtn"
     @click-New-Arrivals="clickNewArrivals"
     @click-Best-Sellers="clickBestSellers"
   />
