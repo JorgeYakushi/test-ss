@@ -11,7 +11,7 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'Steven Stone Test',
+  name: 'App',
   components: {},
   data() {
     return {

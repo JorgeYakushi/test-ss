@@ -8,6 +8,7 @@
       border: '1px solid ' + borderColor,
     }"
     class="btn"
+    :data-testid="btnText"
   >
     {{ btnText }}
   </button>
