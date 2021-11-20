@@ -1,0 +1,45 @@
+<template>
+  <button
+    @click="onClick()"
+    :style="{
+      'background-color': bgColor,
+      color: textColor,
+      border: '1px solid ' + borderColor,
+    }"
+    class="btn"
+  >
+    {{ btnText }}
+  </button>
+</template>
+
+<script>
+export default {
+  name: 'Button',
+  props: {
+    btnText: String,
+    bgColor: String,
+    textColor: String,
+    borderColor: String,
+    methodName: String,
+  },
+  methods: {
+    onClick() {
+      this.$emit(this.methodName)
+    },
+  },
+}
+</script>
+
+<style>
+.btn {
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  width: 186px;
+  height: 48px;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+</style>
+>
