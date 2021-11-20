@@ -9,10 +9,10 @@
 
 <script lang="ts">
 import Vue from 'vue'
-
+import Hero from '../components/Hero.vue'
 export default Vue.extend({
   name: 'App',
-  components: {},
+  components: { Hero },
   data() {
     return {
       showNewArrivalsBtn: true,
