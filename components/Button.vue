@@ -1,6 +1,7 @@
 <template>
   <button
     @click="onClick()"
+    v-show="btnVisible"
     :style="{
       'background-color': bgColor,
       color: textColor,
@@ -17,6 +18,7 @@ export default {
   name: 'Button',
   props: {
     btnText: String,
+    btnVisible: Boolean,
     bgColor: String,
     textColor: String,
     borderColor: String,

@@ -6,14 +6,11 @@
 </template>
 
 <script lang="ts">
-// import Hero from "./components/"
 import Vue from 'vue'
 
 export default Vue.extend({
   name: 'Steven Stone Test',
-  components: {
-    // Hero,
-  },
+  components: {},
   data() {
     return {
       showNewArrivalsBtn: true,
@@ -27,15 +24,17 @@ export default Vue.extend({
     clickBestSellers() {
       console.log('im coming from the transparent button')
     },
-    toggleAddTask() {
-      console.log('im eqweqweqw from the transparent button')
-    },
   },
 })
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@font-face {
+  font-family: 'Numans';
+  src: local('Numans'),
+    url(~assets/fonts/numans/Numans-Regular.ttf) format('truetype');
+}
 body,
 html {
   scroll-behavior: smooth;
@@ -44,7 +43,7 @@ html {
   width: 100vw;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Numans', Arial, Helvetica, sans-serif;
   color: #000000;
   margin: 0;
   background-color: #f9f9f9;
